@@ -1,0 +1,993 @@
+<!-- My own test cases for EvalExpr -->
+<test-case-definitions>
+<test-case>
+	<id>C0001</id>
+	<description>Expression with relational and logical operations.</description>
+	<input><![CDATA[(1.111 >= 1.112) ? 312 : 125]]></input>
+	<output>125</output>
+</test-case>
+<test-case>
+	<id>C0002</id>
+	<description>Predefined functions.</description>
+	<input>min(cos(0.45), sin(1.25), cos(sin(cos(0.15))))</input>
+	<output>0.6709</output>
+</test-case>
+<test-case>
+	<id>C0003</id>
+	<description>Predefined functions.</description>
+	<input>cos(cos(min(142, min(cos(0.45), sin(1.25), cos(sin(cos(0.15)))), 2 + 3 ^ 2, 4 * 3.14E2)))</input>
+	<output>0.7086</output>
+</test-case>
+<test-case>
+	<id>C0004</id>
+	<description>A simple expression.</description>
+	<input>3125e-6*-8+-6*max(sin(1.2),cos(3.6),(4+2>5)?min(2,10/3-2):6)</input>
+	<output>-8.025</output>
+</test-case>
+<test-case>
+	<id>C0005</id>
+	<description>A simple expression with min.</description>
+	<input>MIN(7e3,3.14e-0)</input>
+	<output>3.14</output>
+</test-case>
+<test-case>
+	<id>C0006</id>
+	<description>Expression with arithmetic operations.</description>
+	<input> (60 + 2 *( (12 / 4) ^ 2))+1.22E+2</input>
+	<output>200</output>
+</test-case>
+<test-case>
+	<id>C0007</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>2.25E+2 - (55.5 + 4 * (10 / 2) ^ 2)</input>
+	<output>69.5</output>
+</test-case>
+<test-case>
+	<id>C0008</id>
+	<description>A simple expression.</description>
+	<input>9 - 3 * 2</input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0009</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>2.25E+2 - (55.5 + 4 * (10 / 2) ^ 2)</input>
+	<output>69.5</output>
+</test-case>
+<test-case>
+	<id>C0010</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>65 / 5 - 130e-1</input>
+	<output>0.0</output>
+</test-case>
+<test-case>
+	<id>C0011</id>
+	<description>A simple expression.</description>
+	<input>9 - 3 * 2</input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0012</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>2.25E+2 - (55.5 + 4 * (10 / 2) ^ 2)</input>
+	<output>69.5</output>
+</test-case>
+<test-case>
+	<id>C0013</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>2.25E+2 - (55.5 + 4 * (10 / 2) ^ 2)</input>
+	<output>69.5</output>
+</test-case>
+<test-case>
+	<id>C0014</id>
+	<description>a simple case</description>
+	<input>23+(43)+5</input>
+	<output>71</output>
+</test-case>
+<test-case>
+	<id>C0015</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>65 / 5 - 130e-1</input>
+	<output>0.0</output>
+</test-case>
+<test-case>
+	<id>C0016</id>
+	<description>Expression with relational and logical operations.</description>
+	<input><![CDATA[(5 > 3) & (4 < 8) ? 15 : 16]]></input>
+	<output>15</output>
+</test-case>
+<test-case>
+	<id>C0017</id>
+	<description>Predefined functions.</description>
+	<input>max(sin(0.15), cos(0.15), sin(cos(0.15)))</input>
+	<output>0.98877</output>
+</test-case>
+<test-case>
+	<id>C0018</id>
+	<description>Predefined functions.</description>
+	<input>sin(min(12, 3 * 5, 2 + 3 ^ 2, 3.14E2))</input>
+	<output>-0.99999</output>
+</test-case>
+<test-case>
+	<id>C0019</id>
+	<description>A simple expression.</description>
+	<input>1>2 ? 3 : 4</input>
+	<output>4</output>
+</test-case>
+<test-case>
+	<id>C0020</id>
+	<description>A simple expression.</description>
+	<input>1>=2 ? 3 : 4</input>
+	<output>4</output>
+</test-case>
+<test-case>
+	<id>C0021</id>
+	<description>A simple expression.</description>
+	<input>1=2 ? 3 : 4</input>
+	<output>4</output>
+</test-case>
+<test-case>
+	<id>C0022</id>
+	<description>A simple expression.</description>
+	<input><![CDATA[1< 2 ?3:4]]></input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0023</id>
+	<description>A simple expression.</description>
+	<input><![CDATA[1<=2 ? 3 : 4]]></input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0024</id>
+	<description>A simple expression.</description>
+	<input><![CDATA[1<>2 ? 3 : 4]]></input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0025</id>
+	<description>Expression with arithmetic operations.</description>
+	<input> (60 + 2 *( (12 / 4) ^ 2))+1.22E+2</input>
+	<output>200</output>
+</test-case>
+<test-case>
+	<id>C0026</id>
+	<description>select</description>
+	<input>true?true?123:false?23:43:5</input>
+	<output>123</output>
+</test-case>
+<test-case>
+	<id>C0027</id>
+	<description>Expression with relational and logical operations.</description>
+	<input>1>2 ? 3 : 4</input>
+	<output>4</output>
+</test-case>
+<test-case>
+	<id>C0028</id>
+	<description>Expression with relational and logical operations.</description>
+	<input>1>=2 ? 3 : 4</input>
+	<output>4</output>
+</test-case>
+<test-case>
+	<id>C0029</id>
+	<description>Expression with relational and logical operations.</description>
+	<input>1=2 ? 3 : 4</input>
+	<output>4</output>
+</test-case>
+<test-case>
+	<id>C0030</id>
+	<description>Expression with relational and logical operations.</description>
+	<input><![CDATA[1< 2 ?3:4]]></input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0031</id>
+	<description>Expression with relational and logical operations.</description>
+	<input><![CDATA[1<=2 ? 3 : 4]]></input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0032</id>
+	<description>Expression with relational and logical operations.</description>
+	<input><![CDATA[1<>2 ? 3 : 4]]></input>
+	<output>3</output>
+</test-case>
+<test-case>
+	<id>C0033</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>2.25E+2 - (55.5 + -4 * (10 / 2) ^ 2)</input>
+	<output>269.5</output>
+</test-case>
+<test-case>
+	<id>C0034</id>
+	<description>A simple expression.</description>
+	<input>-99 ---3 * 2</input>
+	<output>-105</output>
+</test-case>
+<test-case>
+	<id>C0035</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>51.3E+2 - (123 ^2)</input>
+	<output>-9999</output>
+</test-case>
+<test-case>
+	<id>C0036</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>673 / 54 - 273e-10</input>
+	<output>12.463</output>
+</test-case>
+<test-case>
+	<id>C0037</id>
+	<description>A simple expression.</description>
+	<input>1292313 ---32142 * 2124</input>
+	<output>-66977295</output>
+</test-case>
+<test-case>
+	<id>C0038</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>1.23214E+20 - (213152541.5 + 42144 * (31410 / 2411445) ^ 6)</input>
+	<output>123213999999786840000</output>
+</test-case>
+<test-case>
+	<id>C0039</id>
+	<description>Expression with arithmetic operations.</description>
+	<input>21465 / 25.4124 - 123e-3</input>
+	<output>844.5434</output>
+</test-case>
+<test-case>
+	<id>E0001</id>
+	<description>SyntacticException.</description>
+	<input>(max5, 6, 8)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0002</id>
+	<description>IllegalDecimalException</description>
+	<input>12.3Emax(4, 5, 6)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0003</id>
+	<description>IllegalDecimalException</description>
+	<input>min(4., 7)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0004</id>
+	<description>IllegalDecimalException</description>
+	<input>4+10.E+5+1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0005</id>
+	<description>Operand expected.</description>
+	<input>(1 + 2) ^ (3 - ) + 5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0006</id>
+	<description>IllegalIdentifierException</description>
+	<input>4+mix(5,2)+1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0007</id>
+	<description>Type mismatched.</description>
+	<input><![CDATA[(13 < 2 * 5) + 12]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0008</id>
+	<description>DividedByZeroException</description>
+	<input>4/(12-3*4)+1</input>
+	<exception>DividedByZeroException</exception>
+</test-case>
+<test-case>
+	<id>E0009</id>
+	<description>FunctionCallException</description>
+	<input>sin(2,1)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0010</id>
+	<description>FunctionCallException</description>
+	<input>max5, 6, 8)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0011</id>
+	<description>IllegalDecimalException</description>
+	<input>4.</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0012</id>
+	<description>IllegalDecimalException</description>
+	<input>.7</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0013</id>
+	<description>IllegalDecimalException</description>
+	<input>4.E+3</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0014</id>
+	<description>IllegalIdentifierException</description>
+	<input>E6</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0015</id>
+	<description>IllegalSymbolException</description>
+	<input>5@</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0016</id>
+	<description>IllegalDecimalException</description>
+	<input>3.e3 + 1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0017</id>
+	<description>IllegalDecimalException</description>
+	<input>4 + 10.E+5 + 1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0018</id>
+	<description>IllegalDecimalException</description>
+	<input>3.3e3.3 + 1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0019</id>
+	<description>IllegalDecimalException</description>
+	<input>1 + 3.3E.3 + 2</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0020</id>
+	<description>IllegalDecimalException</description>
+	<input>1 + 3.3E?(3 + 2)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0021</id>
+	<description>IllegalDecimalException</description>
+	<input>min(4., 7)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0022</id>
+	<description>IllegalDecimalException</description>
+	<input>12.3Emax(4, 5, 6)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0023</id>
+	<description>IllegalIdentifierException</description>
+	<input>TAG</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0024</id>
+	<description>IllegalIdentifierException</description>
+	<input>mix</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0025</id>
+	<description>IllegalIdentifierException</description>
+	<input>5 / v4 + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0026</id>
+	<description>IllegalIdentifierException</description>
+	<input>4 + mix(5, 2) + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0027</id>
+	<description>IllegalSymbolException</description>
+	<input>5@34</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0028</id>
+	<description>IllegalSymbolException</description>
+	<input>(5@4)?7:8</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0029</id>
+	<description>IllegalSymbolException</description>
+	<input>(5 +4)+	4</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0030</id>
+	<description>MissingLeftParenthesisException</description>
+	<input>(2+3)^3)-((1+1)</input>
+	<exception>MissingLeftParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0031</id>
+	<description>MissingOperandException</description>
+	<input>(1+2)^(3-)+5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0032</id>
+	<description>MissingOperandException</description>
+	<input>3>2.5*1.5?9:</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0033</id>
+	<description>MissingOperandException</description>
+	<input><![CDATA[3.14*2>=2.5*3?(6:7)+8]]></input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0034</id>
+	<description>MissingOperandException</description>
+	<input><![CDATA[7>0?7<=0?:6:5]]></input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0035</id>
+	<description>MissingOperandException</description>
+	<input>sin()</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0036</id>
+	<description>MissingOperandException</description>
+	<input>cos(3.14, )</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0037</id>
+	<description>MissingOperandException</description>
+	<input>min()</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0038</id>
+	<description>MissingOperandException</description>
+	<input>min(2.5)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0039</id>
+	<description>MissingOperandException</description>
+	<input>min(,1.8)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0040</id>
+	<description>MissingOperandException</description>
+	<input>max(3.14, )</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0041</id>
+	<description>MissingOperandException</description>
+	<input>max(17, , 87)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0042</id>
+	<description>MissingOperandException</description>
+	<input>true?: 5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0043</id>
+	<description>MissingOperandException</description>
+	<input>2+(?4:5)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0044</id>
+	<description>MissingOperandException</description>
+	<input>2+( )+5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0045</id>
+	<description>MissingOperatorException</description>
+	<input>(1+-2)(3-4)-5</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0046</id>
+	<description>MissingOperatorException</description>
+	<input>(1+2)^(3-4) 5</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0047</id>
+	<description>MissingOperatorException</description>
+	<input>cos(0.5)12.3E+4</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0048</id>
+	<description>MissingRightParenthesisException</description>
+	<input>((2+3)^((3-1)+1)</input>
+	<exception>MissingRightParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0049</id>
+	<description>TrinaryOperationException</description>
+	<input>false?9:true?1:3:5</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0050</id>
+	<description>TrinaryOperationException</description>
+	<input>6?7:7:9</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0051</id>
+	<description>TrinaryOperationException</description>
+	<input>5?(8:8)</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0052</id>
+	<description>TypeMismatchedException</description>
+	<input><![CDATA[(13 < 2 * 5) + 12]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0053</id>
+	<description>TypeMismatchedException</description>
+	<input>12?34:56</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0054</id>
+	<description>TypeMismatchedException</description>
+	<input>true?42.5>5*8:15</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0055</id>
+	<description>TypeMismatchedException</description>
+	<input>4^(32.5>65)</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0056</id>
+	<description>TypeMismatchedException</description>
+	<input>sin(32.5>65)</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0057</id>
+	<description>TypeMismatchedException</description>
+	<input>32.5|65</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0058</id>
+	<description>TypeMismatchedException</description>
+	<input>true+5</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0059</id>
+	<description>TypeMismatchedException</description>
+	<input><![CDATA[5&76]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0060</id>
+	<description>TypeMismatchedException</description>
+	<input>max(54, true)</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0061</id>
+	<description>IllegalSymbolException</description>
+	<input>(5 @ 4) ? 7 : 8</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0062</id>
+	<description>Not a predefined identifier.</description>
+	<input>4 + mix(5, 2) + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0063</id>
+	<description>MissingOperatorException </description>
+	<input>cos(0.5)12.3E+4</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0064</id>
+	<description>TrinaryOperationException </description>
+	<input>false ? 9 : true ? 1 : 3 : 5</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0065</id>
+	<description>TypeMismatchedException </description>
+	<input>true ? 42.5 > 5 * 8 : 15</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0066</id>
+	<description>Left parenthesis expected.</description>
+	<input>(2 + 3) ^ 3) - ((1 + 1)</input>
+	<exception>MissingLeftParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0067</id>
+	<description>Right parenthesis expected.</description>
+	<input>((2 + 3) ^ ((3 - 1) + 1)</input>
+	<exception>MissingRightParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0068</id>
+	<description>Operator expected.</description>
+	<input>(1 + 2) ^ (3 - 4)  5</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0069</id>
+	<description>Operand expected.</description>
+	<input>(1 + 2) ^ (3 - ) + 5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0070</id>
+	<description>Divided by 0.</description>
+	<input>4 / (12 - 3 * 4) + 1</input>
+	<exception>DividedByZeroException</exception>
+</test-case>
+<test-case>
+	<id>E0071</id>
+	<description>Left parenthesis expected.</description>
+	<input>(2 + 3) ^ 3) - ((1 + 1)</input>
+	<exception>MissingLeftParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0072</id>
+	<description>Right parenthesis expected.</description>
+	<input>((2 + 3) ^ ((3 - 1) + 1)</input>
+	<exception>MissingRightParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0073</id>
+	<description>Operator expected.</description>
+	<input>(1 + 2) ^ (3 - 4)  5</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0074</id>
+	<description>Operand expected.</description>
+	<input>(1 + 2) ^ (3 - ) + 5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0075</id>
+	<description>Divided by 0.</description>
+	<input>4 / (12 - 3 * 4) + 1</input>
+	<exception>DividedByZeroException</exception>
+</test-case>
+<test-case>
+	<id>E0076</id>
+	<description>Type mismatched.</description>
+	<input><![CDATA[(13 < 2 * 5) + 12]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0077</id>
+	<description>Scientific Notation Error.</description>
+	<input>4 + 10.E+5 + 1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0078</id>
+	<description>Not a predefined identifier.</description>
+	<input>4 + mix(5, 2) + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0079</id>
+	<description>Function call error.</description>
+	<input>sin(2, 1)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0080</id>
+	<description>Function call error.</description>
+	<input>min(2.5)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0081</id>
+	<description>IllegalDecimalException</description>
+	<input>12.3Emax(4, 5, 6)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0082</id>
+	<description>IllegalDecimalException</description>
+	<input>min(4., 7)</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0083</id>
+	<description>IllegalDecimalException</description>
+	<input>4+10.E+5+1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0084</id>
+	<description>Operand expected.</description>
+	<input>(1 + 2) ^ (3 - ) + 5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0085</id>
+	<description>IllegalIdentifierException</description>
+	<input>4+mix(5,2)+1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0086</id>
+	<description>Type mismatched.</description>
+	<input><![CDATA[(13 < 2 * 5) + 12]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0087</id>
+	<description>IllegalSymbolException</description>
+	<input>(5 @ 4) ? 7 : 8</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0088</id>
+	<description>Not a predefined identifier.</description>
+	<input>4 + mix(5, 2) + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0089</id>
+	<description>MissingOperatorException </description>
+	<input>cos(0.5)12.3E+4</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0090</id>
+	<description>TrinaryOperationException </description>
+	<input>false ? 9 : true ? 1 : 3 : 5</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0091</id>
+	<description>TypeMismatchedException </description>
+	<input>true ? 42.5 > 5 * 8 : 15</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0092</id>
+	<description>Empty Expression</description>
+	<input> </input>
+	<exception>EmptyExpressionException</exception>
+</test-case>
+<test-case>
+	<id>E0093</id>
+	<description>Empty Expression</description>
+	<input>        </input>
+	<exception>EmptyExpressionException</exception>
+</test-case>
+<test-case>
+	<id>E0094</id>
+	<description>Type Miss Match</description>
+	<input>true-2</input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0095</id>
+	<description>Miss Operand</description>
+	<input>|</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0096</id>
+	<description>Error in ?:</description>
+	<input>:</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0097</id>
+	<description>Miss Operand</description>
+	<input>?:</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0098</id>
+	<description>Function call error.</description>
+	<input>sin0.23)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0099</id>
+	<description>Right parenthesis expected.</description>
+	<input>(( --- 1)</input>
+	<exception>MissingRightParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0100</id>
+	<description>Operator expected.</description>
+	<input>123(456)</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0101</id>
+	<description>Operand expected.</description>
+	<input>sin()</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0102</id>
+	<description>Scientific Notation Error.</description>
+	<input>1234e</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0103</id>
+	<description>Scientific Notation Error.</description>
+	<input>1.1E+1.1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0104</id>
+	<description>Scientific Notation Error.</description>
+	<input>.1e+1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0105</id>
+	<description>Not a predefined identifier.</description>
+	<input>sos(111)</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0106</id>
+	<description>Function call error.</description>
+	<input>sin(cos(sin(1.31, 3.214)))</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0107</id>
+	<description>Function call error.</description>
+	<input>max(1232.5135123235)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0108</id>
+	<description>Left parenthesis expected.</description>
+	<input>((-1e1)))</input>
+	<exception>MissingLeftParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0109</id>
+	<description>Right parenthesis expected.</description>
+	<input>(((1145.14))</input>
+	<exception>MissingRightParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0110</id>
+	<description>Operator expected.</description>
+	<input>---1 (2)</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0111</id>
+	<description>Operand expected.</description>
+	<input>123^</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0112</id>
+	<description>Divided by 0.</description>
+	<input>1 / sin(0)</input>
+	<exception>DividedByZeroException</exception>
+</test-case>
+<test-case>
+	<id>E0113</id>
+	<description>Operand expected.</description>
+	<input>max(1,1,4,5,1,4,)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0114</id>
+	<description>LexicalException.</description>
+	<input>((5 @ 4) ? 7 : 8</input>
+	<exception>IllegalSymbolException</exception>
+</test-case>
+<test-case>
+	<id>E0115</id>
+	<description>Right parenthesis expected.</description>
+	<input>((12 12</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0116</id>
+	<description>Operator expected.</description>
+	<input>(1 + 2) ^ (3 - 4)  5</input>
+	<exception>MissingOperatorException</exception>
+</test-case>
+<test-case>
+	<id>E0117</id>
+	<description>Operand expected.</description>
+	<input>(1 + 2) ^ (3 - ) + 5</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0118</id>
+	<description>Divided by 0.</description>
+	<input>4 / (12 - 3 * 4) + 1</input>
+	<exception>DividedByZeroException</exception>
+</test-case>
+<test-case>
+	<id>E0119</id>
+	<description>Type mismatched.</description>
+	<input><![CDATA[(13 < 2 * 5) + 12]]></input>
+	<exception>TypeMismatchedException</exception>
+</test-case>
+<test-case>
+	<id>E0120</id>
+	<description>Scientific Notation Error.</description>
+	<input>4 + 10.E+5 + 1</input>
+	<exception>IllegalDecimalException</exception>
+</test-case>
+<test-case>
+	<id>E0121</id>
+	<description>Not a predefined identifier.</description>
+	<input>4 + mix(5, 2) + 1</input>
+	<exception>IllegalIdentifierException</exception>
+</test-case>
+<test-case>
+	<id>E0122</id>
+	<description>Function call error.</description>
+	<input>sin(2, 1)</input>
+	<exception>FunctionCallException</exception>
+</test-case>
+<test-case>
+	<id>E0123</id>
+	<description>Function call error.</description>
+	<input>min(2.5)</input>
+	<exception>MissingOperandException</exception>
+</test-case>
+<test-case>
+	<id>E0124</id>
+	<description>SyntacticException.</description>
+	<input>3.14 * 2 >= 2.5 * 3 ? (6 : 7) + 8</input>
+	<exception>TrinaryOperationException</exception>
+</test-case>
+<test-case>
+	<id>E0125</id>
+	<description>SyntacticException.</description>
+	<input>(2 + 3) ^ 3) - ((1 + 1)</input>
+	<exception>MissingLeftParenthesisException</exception>
+</test-case>
+<test-case>
+	<id>E0126</id>
+	<description>SyntacticException.</description>
+	<input>((2 + 3) ^ ((3 - 1) + 1)</input>
+	<exception>MissingRightParenthesisException</exception>
+</test-case>
+</test-case-definitions>
